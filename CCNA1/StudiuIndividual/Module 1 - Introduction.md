@@ -64,7 +64,7 @@
 
 ### 1.2.2 Peer-to-peer
 
-![Structura PeerToPeer](PeerToPeer.png)
+![Structura PeerToPeer](../Image/PeerToPeer.png)
 
 - **Într-o rețea P2P, fiecare calculator poate fi simultan și client și server** nu există o ierarhie fixă ca la client-server, unde serverul e dedicat doar să ofere servicii. Aici toate device-urile sunt "egale" (peers) și pot atât oferi, cât și cere resurse (fișiere, imprimante etc.) unele de la altele.
 
@@ -92,7 +92,7 @@
 ---
 ### 1.2.3 End Devices
 
-![Structura End Devices](EndDevice.png)
+![Structura End Devices](../Image/EndDevice.png)
 
 #### **End devices = orice device cu care interacționează direct utilizatorul final** și care generează sau consumă date în rețea.
 
@@ -112,7 +112,7 @@
 ---
 ### 1.2.4 Intermediary Devices
 
-![Structura intermediary devices](IntermediaryDevices.png)
+![Structura intermediary devices](../Image/IntermediaryDevices.png)
 
 - Device-urile intermediare **conectează end device-urile la rețea** și pot conecta mai multe rețele individuale între ele, formând un **internetwork**. Rolul lor: asigură **conectivitatea** și garantează că datele **circulă corect** prin rețea.
 
@@ -128,7 +128,7 @@
 
 ### 1.2.5 Network Media
 
-![Tipuri de cabluri](NetworkMedia.png)
+![Tipuri de cabluri](../Image/NetworkMedia.png)
 
 ### **Media** (mediul de transmisie) e canalul prin care mesajul călătorește **de la sursă la destinație**. Practic, e "drumul fizic" pe care circulă datele.
 
@@ -175,13 +175,13 @@ Diagramele de topologie sunt **documentație obligatorie** pentru oricine lucrea
 
 **Ce arată:** **locația fizică** a device-urilor intermediare și **instalarea cablurilor**, practic, unde sunt device-urile în realitate (camere, rack-uri, shelf-uri)
 
-![Fizic](PTD.png)
+![Fizic](../Image/PTD.png)
 
 ### Logical Topology Diagram
 
 **Ce arată:** **device-urile, porturile, și schema de adresare** a rețelei, vezi ce end devices sunt conectate la ce device-uri intermediare și ce media se folosește
 
-![Logic](LTD.png)
+![Logic](../Image/LTD.png)
 
 
 ---
@@ -193,21 +193,21 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 #### 1. Small Home Networks
 
-![Small Home Network](SmallHome.png)
+![Small Home Network](../Image/SmallHome.png)
 
 - Conectează **câteva calculatoare** între ele și la internet
 - Permit partajarea resurselor: **printere, documente, poze, muzică** — între câteva end devices locale
 
 #### 2. Small Office and Home Office (SOHO)
 
-![Small Office and Home Office](HomeOffice.png)
+![Small Office and Home Office](../Image/HomeOffice.png)
 
 - Permit oamenilor să **lucreze de acasă** sau dintr-un birou la distanță
 - Folosite mult de **lucrători independenți (self-employed)** — pentru a face reclamă/vinde produse, a comanda materiale, a comunica cu clienții
 
 #### 3. Medium to Large Networks (business-uri/organizații mari)
 
-![Medium to Large Networks](MediumToLarge.png)
+![Medium to Large Networks](../Image/MediumToLarge.png)
 
 - Folosite de business-uri și organizații mari pentru: **consolidare, stocare, și acces la informații** pe servere de rețea
 - Oferă **email, mesagerie instant, colaborare** între angajați
@@ -215,7 +215,7 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 #### 4. World Wide Networks (Internetul)
 
-![World Wide Networks](WorldWide.png)
+![World Wide Networks](../Image/WorldWide.png)
 
 - **Internetul** = cea mai mare rețea existentă — termenul "internet" înseamnă literal **"network of networks"** (rețea de rețele)
 - E o **colecție de rețele private și publice interconectate**
@@ -228,16 +228,16 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 ### LAN (Local Area Network)
 
-![LAN](LAN.png)
+![LAN](../Image/LAN.png)
 
 ### WAN (Wide Area Network)
 
-![WAN](WAN.png)
+![WAN](../Image/WAN.png)
 
 ---
 ### 1.4.3 The Internet
 
-![Internet](Internet.png)
+![Internet](../Image/Internet.png)
 
 - Internetul = colecție globală de LAN-uri interconectate prin WAN-uri, fără un proprietar unic, funcționând datorită unor standarde comune menținute de organizații precum IETF, ICANN și IAB.
 
@@ -246,7 +246,7 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 ---
 ### 1.4.4 Intranets and Extranets
 
-![Intranet and Extranet](IntraExtra.png)
+![Intranet and Extranet](../Image/IntraExtra.png)
 
 | Nivel        | Cine are acces                                    | Domeniu                 |
 | ------------ | ------------------------------------------------- | ----------------------- |
@@ -263,7 +263,7 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 - Utilizatorii casnici/mici folosesc conexiuni ISP standard (cable, DSL, wireless, mobil), în timp ce business-urile au nevoie de conexiuni mai rapide și mai fiabile (business DSL, leased lines, Metro Ethernet) pentru a susține servicii critice ca telefonie IP și videoconferințe.
 ### 1.5.2 Home and Small Office Internet Connections
 
-![Connections](Con.png)
+![Connections](../Image/Con.png)
 
 | Tip                   | Cum funcționează                                                             | Caracteristici cheie                                                                                                                                        |
 | --------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -275,7 +275,7 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 ### 1.5.3 Businesses Internet Connections
 
-![Businesses](Buss.png)
+![Businesses](../Image/Buss.png)
 
 | Tip                       | Cum funcționează                                                                                                                         | Caracteristici cheie                                                                                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -288,9 +288,9 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 **Convergență** = combinarea rețelelor separate de date, voce și video într-**o singură infrastructură de rețea**, capabilă să transporte toate tipurile de trafic simultan, folosind un singur set de standarde.
 
-![.](Traditional.png)
+![.](../Image/Traditional.png)
 
-![.](Converged.png)
+![.](../Image/Converged.png)
 
 ---
 
@@ -307,7 +307,7 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 ### 1.6.2 Fault Tolerance
 
-![Tolerance](Tolerance.png)
+![Tolerance](../Image/Tolerance.png)
 
 **Fault tolerance** = capacitatea rețelei de a continua să funcționeze chiar dacă un link/device cade, datorită **redundanței** (căi multiple) și **packet switching** (pachetele își găsesc singure alt drum, dinamic, fără ca userul să simtă ceva).
 
@@ -317,7 +317,7 @@ Rețelele se clasifică după **mărime și scop**: de la rețele mici de casă 
 
 ### 1.6.4 Quality of Service
 
-![QOS](QOS.png)
+![QOS](../Image/QOS.png)
 
 **QoS prioritizează traficul time-sensitive** (sensibil la timp) — **tipul de trafic contează, nu conținutul lui**. Adică routerul nu se uită la _ce_ se transmite exact, ci la _ce fel_ de trafic e (voce vs date vs video) ca să decidă prioritatea.
 
@@ -382,7 +382,7 @@ Powerline = alternativă la cablurile Ethernet sau la Wi-Fi, ideală când vrei 
 
 **WISP** = soluția wireless pentru zone rurale fără cable/DSL — antenă pe acoperișul clientului conectată wireless la un punct de access aflat pe o structură înaltă din apropiere.
 
-![Wireless Broadband](WirelessBroadband.png)
+![Wireless Broadband](../Image/WirelessBroadband.png)
 
 ---
 
