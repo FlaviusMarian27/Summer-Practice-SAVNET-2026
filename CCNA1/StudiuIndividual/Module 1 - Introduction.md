@@ -22,7 +22,7 @@
 
 ### 1.2.1 Host Roles
 
-![Structura Host](HostRoles.png)
+![Structura Host](Image/HostRoles.png)
 
 #### Ce este un host?
 
