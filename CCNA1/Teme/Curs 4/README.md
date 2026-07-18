@@ -5,7 +5,7 @@
 
 Acest document detaliază pașii necesari pentru configurarea unei topologii de rețea formate din 4 rețele locale (LAN-uri) interconectate printr-un router central. Configurația de nivel 2 se realizează exclusiv pe VLAN-ul implicit (VLAN 1).
 
-![Retea](../../../Image/Curs4.png)
+![Retea](../../Image/Curs4.png)
 
 ---
 
