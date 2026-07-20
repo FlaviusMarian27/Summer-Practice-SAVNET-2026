@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5e8686203b1f4f71",
+        "id": "42e73d9795454e9c",
         "type": "tabs",
         "children": [
           {
-            "id": "286a8f5550f97c85",
+            "id": "659df7727bc96678",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA1/Teme/Curs 4 Tema/README.md",
+                "file": "CCNA1/Teme/Curs 5 - 20.07.2026/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,11 +183,18 @@
       "bases:Creează o bază nouă": false
     }
   },
-  "active": "286a8f5550f97c85",
+  "active": "659df7727bc96678",
   "lastOpenFiles": [
+    "CCNA1/Teme/Curs 5 - 20.07.2026/Rezolvat.pkt",
+    "CCNA1/Cursuri/Curs 5 - 20.07.2026.md",
+    "CCNA1/Teme/Curs 5 - 20.07.2026/README.md",
+    "CCNA1/Teme/Curs 5 - 20.07.2026/topologie.png",
+    "CCNA1/Teme/Curs 5 - 20.07.2026/Pasted image.png",
+    "CCNA1/Teme/Curs 5 - 20.07.2026/cerinta.png",
+    "CCNA1/Teme/Curs 5 - 20.07.2026",
+    "CCNA1/Teme/Curs 4 Tema/README.md",
     "CCNA1/Teme/Curs 4 Tema/Rezolvat.pkt",
     "Fără titlu.md",
-    "CCNA1/Teme/Curs 4 Tema/README.md",
     "CCNA1/StudiuIndividual/Module 5 - Number Systems.md",
     "CCNA1/StudiuIndividual/Module 2 - Basic Switch and End Device Configuration.md",
     "CCNA1/Image/Tabela.png",
@@ -199,9 +206,6 @@
     "CCNA1/Image/Encoder.png",
     "CCNA1/Image/router.png",
     "CCNA1/StudiuIndividual/Module 3 - Protocols and Models.md",
-    "CCNA1/Image/Segment.png",
-    "CCNA1/Image/PDU.png",
-    "Pasted image 20260719130715.png",
     "CCNA1/Teme/Curs 2 - 15.07.2026/README.md",
     "CCNA1/StudiuIndividual/Module 1 - Introduction.md",
     "CCNA1/Teme/Curs 2 - 15.07.2026/Rezolvat.pkt",
@@ -215,8 +219,6 @@
     "CCNA1/Teme/17.07.2026 - Curs 4/Nerezolvat.pkt",
     "CCNA1/Teme/17.07.2026 - Curs 4",
     "CCNA1/Teme/Curs 4 Tema",
-    "CCNA1/Teme/Curs 2 - 15.07.2026",
-    "CCNA1/Teme/Curs 3 - 16.07.2026/Nerezolvat.pkt",
     "README.md",
     "Linux/README.md"
   ]
