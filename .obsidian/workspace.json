@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "69222cdee8540d97",
+        "id": "86ab5cb827eba9d7",
         "type": "tabs",
         "children": [
           {
-            "id": "be2863c4098f5b73",
+            "id": "5597a7b2daca070d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA1/Cursuri/Curs 6 - 21.07.2026.md",
+                "file": "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Curs 6 - 21.07.2026"
-            }
-          },
-          {
-            "id": "66e557a1debb32e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA1/Teme/Curs 6 - 21.07.2026/README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "Module 7 - Ethernet Switching"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,26 +183,27 @@
       "bases:Creează o bază nouă": false
     }
   },
-  "active": "66e557a1debb32e1",
+  "active": "5597a7b2daca070d",
   "lastOpenFiles": [
+    "CCNA1/Image/HeaderEthernet.png",
+    "CCNA1/Image/Pasted image.png",
+    "CCNA1/Image/OUI.png",
+    "CCNA1/Image/TABELDBH.png",
+    "CCNA1/Image/EFF.png",
+    "CCNA1/Image/ESM.png",
+    "CCNA1/Image/DLS.png",
+    "CCNA1/Image/EthernetOSI.png",
+    "CCNA1/Cursuri/Curs 6 - 21.07.2026.md",
+    "CCNA1/Teme/Curs 6 - 21.07.2026/README.md",
     "CCNA1/Teme/Curs 6 - 21.07.2026/Rezolvat.pkt",
     "CCNA1/Teme/Curs 4 - 17.07.2026/README.md",
-    "CCNA1/Teme/Curs 6 - 21.07.2026/README.md",
     "CCNA1/Cursuri/Curs 3 - 16.07.2026.md",
-    "CCNA1/Cursuri/Curs 6 - 21.07.2026.md",
     "CCNA1/Teme/Curs 6 - 21.07.2026/topologie.png",
     "CCNA1/Teme/Curs 6 - 21.07.2026/Pasted image.png",
     "CCNA1/Teme/Curs 6 - 21.07.2026",
     "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
     "CCNA1/StudiuIndividual/Module 6 - Data Link Layer.md",
     "CCNA1/Image/CA.png",
-    "CCNA1/Image/Pasted image.png",
-    "CCNA1/Image/CBA.png",
-    "CCNA1/Image/PhysicalTop.png",
-    "CCNA1/Image/Phy.png",
-    "CCNA1/Image/Mesh.png",
-    "CCNA1/Image/HS.png",
-    "CCNA1/Image/PtoP.png",
     "CCNA1/Teme/Curs 5 - 20.07.2026/README.md",
     "CCNA1/Teme/Curs 5 - 20.07.2026/Rezolvat.pkt",
     "CCNA1/Cursuri/Curs 5 - 20.07.2026.md",
@@ -238,7 +224,6 @@
     "CCNA1/Teme/Curs 4 - 17.07.2026",
     "CCNA1/Teme/17.07.2026 - Curs 4/Rezolvat.pkt",
     "CCNA1/Teme/17.07.2026 - Curs 4/README.md",
-    "CCNA1/Teme/17.07.2026 - Curs 4/Nerezolvat.pkt",
     "README.md",
     "Linux/README.md"
   ]
