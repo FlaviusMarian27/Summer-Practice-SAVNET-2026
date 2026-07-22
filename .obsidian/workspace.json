@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
+                "file": "CCNA1/StudiuIndividual/Module 8 - Network Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 7 - Ethernet Switching"
+              "title": "Module 8 - Network Layer"
             }
           }
         ]
@@ -185,23 +185,25 @@
   },
   "active": "5597a7b2daca070d",
   "lastOpenFiles": [
-    "CCNA1/Cursuri/Curs 7 - 22.07.2026.md",
-    "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
-    "CCNA1/Image/HeaderEthernet.png",
+    "CCNA1/Image/RT.png",
     "CCNA1/Image/Pasted image.png",
-    "CCNA1/Image/OUI.png",
-    "CCNA1/Image/TABELDBH.png",
-    "CCNA1/Image/EFF.png",
-    "CCNA1/Image/ESM.png",
-    "CCNA1/Image/DLS.png",
-    "CCNA1/Image/EthernetOSI.png",
+    "CCNA1/Image/DR1.png",
+    "CCNA1/Image/DR.png",
+    "CCNA1/Image/ST2.png",
+    "CCNA1/Image/ST1.png",
+    "CCNA1/Image/IPRRT.png",
+    "CCNA1/Image/GW.png",
+    "CCNA1/Image/IPv6.png",
+    "CCNA1/Image/tabelIPv4IPv6.png",
+    "CCNA1/Image/IPv4.png",
+    "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
+    "CCNA1/StudiuIndividual/Module 8 - Network Layer.md",
+    "CCNA1/Cursuri/Curs 7 - 22.07.2026.md",
     "CCNA1/Cursuri/Curs 6 - 21.07.2026.md",
     "CCNA1/Teme/Curs 6 - 21.07.2026/README.md",
     "CCNA1/Teme/Curs 6 - 21.07.2026/Rezolvat.pkt",
     "CCNA1/Teme/Curs 4 - 17.07.2026/README.md",
     "CCNA1/Cursuri/Curs 3 - 16.07.2026.md",
-    "CCNA1/Teme/Curs 6 - 21.07.2026/topologie.png",
-    "CCNA1/Teme/Curs 6 - 21.07.2026/Pasted image.png",
     "CCNA1/Teme/Curs 6 - 21.07.2026",
     "CCNA1/StudiuIndividual/Module 6 - Data Link Layer.md",
     "CCNA1/Teme/Curs 5 - 20.07.2026/README.md",
