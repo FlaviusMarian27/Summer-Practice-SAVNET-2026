@@ -141,7 +141,7 @@ Punct important: au existat mai multe protocol suites concurente în istorie, da
 
 Exemplu concret HTTP request: **HTTP** (application) → **TCP** (transport) → **IP** (internet) → **Ethernet** (network access). Notă: **nu există protocoale TCP/IP proprii la network access layer** — acolo se folosesc standardele existente (Ethernet, WLAN, celular).
 
-![TCP/IP](TCPIP.png)
+![TCP/IP](../Image/TCPIP.png)
 
 
 ### 3.3.4 TCP/IP Protocol Suite — harta completă
@@ -179,7 +179,7 @@ Cele două note pe care merită să pui accent (poate mai puțin evidente decât
 	- TCP = conexiune fiabilă, confirmată (acknowledged); 
 	- UDP = fără confirmare de livrare, mai rapid dar "best-effort"
 
-![TCP/IP](TCPIP1.png)
+![TCP/IP](../Image/TCPIP1.png)
 
 ---
 
@@ -248,12 +248,12 @@ Modelul OSI descrie **ce** trebuie făcut la fiecare strat, nu **cum** — deci 
 
 TCP/IP e un **model de protocol** (nu doar de referință) fiindcă descrie efectiv funcțiile implementate în stiva reală TCP/IP:
 
-|#|Strat|Funcție|
-|---|---|---|
-|4|Application|reprezintă datele către utilizator, encoding, dialog control|
-|3|Transport|comunicare între device-uri prin rețele diverse|
-|2|Internet|determină cea mai bună cale prin rețea|
-|1|Network Access|controlează hardware-ul și media|
+| #   | Strat          | Funcție                                                      |
+| --- | -------------- | ------------------------------------------------------------ |
+| 4   | Application    | reprezintă datele către utilizator, encoding, dialog control |
+| 3   | Transport      | comunicare între device-uri prin rețele diverse              |
+| 2   | Internet       | determină cea mai bună cale prin rețea                       |
+| 1   | Network Access | controlează hardware-ul și media                             |
 
 Notă: standardele TCP/IP sunt discutate public și definite prin **RFC-uri** (Request for Comments), scrise de ingineri de rețea și trimise spre comentarii altor membri IETF — deci procesul e deschis, nu impus de un singur vendor.
 
@@ -307,13 +307,13 @@ Provocarea: dacă împarți mesajul în bucăți, ele pot ajunge **out-of-order*
 
 Conceptul central al secțiunii — la fiecare strat, datele primesc un nume diferit de PDU, pe măsură ce coboară prin stivă (encapsulare):
 
-|Strat TCP/IP|Nume PDU|
-|---|---|
-|Application|**Data**|
-|Transport|**Segment**|
-|Internet|**Packet**|
-|Network Access|**Frame**|
-|Physical|**Bits**|
+| Strat TCP/IP   | Nume PDU    |
+| -------------- | ----------- |
+| Application    | **Data**    |
+| Transport      | **Segment** |
+| Internet       | **Packet**  |
+| Network Access | **Frame**   |
+| Physical       | **Bits**    |
 
 ![PDU](../Image/PDU.png)
 
