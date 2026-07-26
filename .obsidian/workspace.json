@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA1/StudiuIndividual/Module 12 - IPv6 Addressing.md",
+                "file": "CCNA1/StudiuIndividual/Module 13 - ICMP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 12 - IPv6 Addressing"
+              "title": "Module 13 - ICMP"
             }
           }
         ]
@@ -185,11 +185,12 @@
   },
   "active": "1df15cb40be50db8",
   "lastOpenFiles": [
+    "CCNA1/StudiuIndividual/Module 12 - IPv6 Addressing.md",
+    "CCNA1/StudiuIndividual/Module 13 - ICMP.md",
     "CCNA1/Image/EUI64.png",
     "CCNA1/Image/Pasted image.png",
     "CCNA1/Image/IPv6U.png",
     "CCNA1/Image/IPv6Str.png",
-    "CCNA1/StudiuIndividual/Module 12 - IPv6 Addressing.md",
     "CCNA1/StudiuIndividual/Module 3 - Protocols and Models.md",
     "CCNA1/StudiuIndividual/Module 11 - IPv4 Addressing.md",
     "CCNA1/Image/RIR.png",
@@ -202,7 +203,6 @@
     "CCNA1/Image/CRI.png",
     "CCNA1/Image/ICMPv6.png",
     "CCNA1/Image/ARP2.png",
-    "CCNA1/Image/ARP1.png",
     "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
     "CCNA1/Cursuri/Curs 8 - 23.07.2026.md",
     "CCNA1/Cursuri/Curs 7 - 22.07.2026.md",
