@@ -6,38 +6,71 @@
 
 ![OS](../Image/OS.png)
 
-Toate end devices și network devices au nevoie de un **sistem de operare (OS)**.
+Toate device-urile (end devices și network devices) au nevoie de un OS.
 
-**Structura unui OS — 3 straturi (din diagrama concentrică):**
+- **Shell** – interfața cu utilizatorul, permite cereri de task-uri specifice de la calculator. Poate fi CLI sau GUI.
+- **Kernel** – comunică între hardware și software, gestionează cum sunt folosite resursele hardware pentru cerințele software-ului.
+- **Hardware** – partea fizică a calculatorului, inclusiv electronica de bază.
 
-| Strat                   | Rol                                                                                                                                     |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Hardware** (interior) | Partea fizică a calculatorului, inclusiv electronica de bază                                                                            |
-| **Kernel** (mijloc)     | Comunică între hardware și software, gestionează cum sunt folosite resursele hardware pentru a satisface cerințele software-ului        |
-| **Shell** (exterior)    | **Interfața utilizatorului** care permite cereri de task-uri specifice către calculator — aceste cereri se fac prin **CLI** sau **GUI** |
+Structura e concentrică: Hardware (în centru) → Kernel → Shell (exterior), iar utilizatorul interacționează cu Shell-ul prin CLI sau GUI.
 
-**Cele 2 moduri de interacțiune cu shell-ul:**
-- **CLI** (Command-Line Interface) — interfață text, bazată pe comenzi
-- **GUI** (Graphical User Interface) — interfață grafică
+**CLI** (command-line interface): utilizatorul interacționează direct cu sistemul într-un mediu text-based, introducând comenzi de la tastatură la un prompt. Sistemul execută comanda și de obicei dă output textual. CLI necesită overhead foarte mic, dar necesită cunoașterea structurii de comenzi.
 
-#### Despre CLI:
-- Utilizatorul interacționează **direct** cu sistemul, într-un mediu **text-based**, introducând comenzi la un **command prompt**
-- Sistemul execută comanda, adesea oferind output textual
-- **CLI necesită foarte puțin overhead** ca să opereze (eficient, resurse minime)
-- **Dar** — cere ca utilizatorul să **cunoască structura de comenzi** care controlează sistemul (nu e intuitiv ca un GUI, trebuie să știi exact ce comenzi să scrii)
+
 
 ### 2.1.2 GUI
 
-- Cisco IOS = sistemul de operare folosit pe echipamentele Cisco profesionale (routere/switch-uri). Acesta este accesat de obicei prin **CLI** pentru stabilitate și funcționalitate completă spre deosebire de routerele de acasă, care folosesc **firmware** configurat printr-un **GUI web-based**.
+GUI (Windows, macOS, Linux KDE, Apple iOS, Android) — utilizatorul interacționează prin icoane grafice, meniuri, ferestre. E mai user-friendly, necesită mai puțină cunoaștere a structurii de comenzi → de aceea majoritatea utilizatorilor preferă GUI.
+
+Totuși, GUI-urile pot să nu ofere toate funcțiile disponibile prin CLI, pot să pice/crash-uiască sau să nu funcționeze cum trebuie. **De aceea network device-urile sunt de obicei accesate prin CLI** — CLI e mai puțin resource-intensive și mult mai stabil decât GUI.
+
+- Familia de OS-uri de rețea folosită pe multe device-uri Cisco = **Cisco IOS (Internetwork Operating System)**.
+- Cisco IOS e folosit pe multe routere și switch-uri Cisco, indiferent de tip/mărime.
+- Fiecare tip de router/switch folosește o versiune diferită de IOS.
+- Alte OS-uri Cisco: **IOS XE, IOS XR, NX-OS**.
+- **Notă:** OS-ul de pe routerele de acasă se numește de obicei **firmware**. Cea mai comună metodă de configurare a unui router de acasă = printr-un GUI bazat pe browser web.
+
+
 
 ### 2.1.3 Purpose of an OS
 
-- Network OS (Cisco IOS) funcționează pe aceleași principii ca un PC OS, dar prin CLI comenzile de la tastatură înlocuiesc click-urile de mouse. Versiunea de IOS depinde de device și de funcționalitățile dorite, și poate fi actualizată pentru capabilități noi.
+Network OS-urile sunt similare cu OS-ul de PC.
+
+Printr-un GUI, un OS de PC permite utilizatorului să:
+
+- folosească mouse-ul pentru selecții și rulare de programe
+- introducă text și comenzi text-based
+- vadă output pe un monitor
+
+Un network OS bazat pe CLI (ex: Cisco IOS pe switch/router) permite unui tehnician de rețea să:
+
+- folosească tastatura pentru a rula programe CLI-based
+- folosească tastatura pentru a introduce text și comenzi text-based
+- vadă output pe un monitor
+
+Device-urile Cisco rulează versiuni particulare de IOS, dependente de tipul de device și feature-urile necesare. Toate device-urile vin cu un IOS default și un set de feature-uri default, dar poate fi făcut upgrade la versiunea de IOS sau la feature set pentru capabilități suplimentare.
+
+
 
 ### 2.1.4 Access Methods
 
-- Terminal emulation programs = software-ul folosit pentru a te conecta la un device Cisco, fie prin consolă (serial), fie prin SSH/Telnet (rețea). 
-- Exemple comune (nu menționate explicit în text, dar utile de știut din experiență practică): **PuTTY, SecureCRT, Tera Term**.
+Un switch va forward-ui trafic by default, fără să fie explicit configurat — ex: două host-uri conectate la un switch nou pot comunica direct. Totuși, **toate switch-urile trebuie configurate și securizate**.
+
+|Metodă|Descriere|
+|---|---|
+|**Console**|Port fizic de management, oferă acces **out-of-band** (canal de management dedicat, doar pentru mentenanță device). Avantaj: device-ul e accesibil chiar dacă nu sunt configurate servicii de rețea (ex: la configurarea inițială). Necesită un calculator cu software de terminal emulation + cablu console special.|
+|**SSH (Secure Shell)**|Metodă **in-band**, recomandată, pentru stabilirea securizată de la distanță a unei conexiuni CLI, printr-o interfață virtuală, peste rețea. Spre deosebire de console, necesită servicii de rețea active pe device, inclusiv o interfață activă configurată cu adresă. Majoritatea versiunilor de Cisco IOS includ server SSH și client SSH.|
+|**Telnet**|Metodă **in-band**, nesigură, de stabilire la distanță a unei sesiuni CLI, printr-o interfață virtuală, peste rețea. Spre deosebire de SSH, nu oferă conexiune securizată/criptată — ar trebui folosit doar în lab. Autentificare, parole și comenzi sunt trimise în plaintext peste rețea. Best practice = SSH în loc de Telnet. Cisco IOS include atât server cât și client Telnet.|
+
+**Notă:** unele device-uri (ex: routere) pot suporta un port **auxiliary (AUX)** legacy, folosit pentru sesiune CLI de la distanță printr-o conexiune telefonică (modem). La fel ca console, AUX e out-of-band și nu necesită servicii de rețea configurate/disponibile.
+
+
+
+### **2.1.5 Terminal Emulation Programs**
+
+Programe de terminal emulation folosite pentru conectare la un network device, fie prin conexiune serială pe portul console, fie prin conexiune SSH/Telnet. Permit ajustarea dimensiunii ferestrei, mărimii fontului, schemelor de culori.
+
+Exemple: **PuTTY, Tera Term, SecureCRT**.
 
 ---
 
@@ -45,93 +78,53 @@ Toate end devices și network devices au nevoie de un **sistem de operare (OS)**
 
 ### 2.2.1 Primary Command Modes
 
-- Cisco IOS separă accesul de management în **2 moduri de comandă** (security feature) CLI-ul oferă control mai precis decât GUI, de asta se folosește pentru configurare.
+Cisco IOS separă accesul de management în două moduri de comandă principale (feature de securitate):
 
----
-#### 1. User EXEC Mode
+- **User EXEC Mode** – capabilități limitate, dar util pentru operații de bază. Permite doar un număr limitat de comenzi de monitorizare, **nu permite** execuția niciunei comenzi care ar putea schimba configurația device-ului. Prompt-ul se termină cu **>**. Numit adesea "view-only" mode.
+- **Privileged EXEC Mode** – pentru a executa comenzi de configurare, un administrator de rețea trebuie să acceseze acest mod. Modurile de configurare mai avansate (ex: global configuration mode) pot fi accesate doar din Privileged EXEC. Prompt-ul se termină cu **#**. Permite acces la toate comenzile și feature-urile, orice comenzi de monitorizare, configurare și management.
 
-- Capabilități **limitate**  util pentru operații de bază
-- Permite doar un **număr limitat de comenzi de monitorizare**
-- **NU permite** execuția de comenzi care ar schimba configurația device-ului
-- **Prompt-ul se termină cu `>`**
-- Numit adesea și **"view-only" mode**
+| Mod                  | Descriere                                                   | Prompt default        |
+| -------------------- | ----------------------------------------------------------- | --------------------- |
+| User EXEC Mode       | acces doar la comenzi de monitorizare limitate; "view-only" | `Switch>` / `Router>` |
+| Privileged EXEC Mode | acces la toate comenzile și feature-urile                   | `Switch#` / `Router#` |
 
----
-#### 2. Privileged EXEC Mode
 
-- Pentru a executa comenzi de configurare, trebuie să accesezi acest mod
-- Modurile de configurare superioare (ex: **global configuration mode**) pot fi accesate **doar din Privileged EXEC**
-- **Prompt-ul se termină cu `#`**
-- Permite acces la **toate comenzile și feature-urile**  orice comandă de monitorizare + comenzi de configurare/management
 
----
-
-**Tabel de reținut clar (esențial, sigur apare la quiz):**
-
-|Mode|Acces|Prompt (Switch)|Prompt (Router)|
-|---|---|---|---|
-|**User EXEC**|Comenzi limitate de monitorizare ("view-only")|`Switch>`|`Router>`|
-|**Privileged EXEC**|Toate comenzile + configurare/management|`Switch#`|`Router#`|
-
----
 
 ### 2.2.2 Configuration Mode and Subconfiguration Modes
 
-**Global Configuration Mode:**
+Pentru a configura device-ul, utilizatorul trebuie să intre în **global configuration mode** ("global config mode"). Din global config mode se fac schimbări CLI care afectează operarea device-ului ca întreg. Se identifică prin prompt care se termină cu **(config)#** după numele device-ului, ex: `Switch(config)#`.
 
-- Pentru a configura device-ul, trebuie mai întâi să intri în **global configuration mode** ("global config mode")
-- De aici se fac schimbări care afectează **operarea device-ului ca întreg**
-- **Prompt:** se termină cu `(config)#` → ex: `Switch(config)#`
-- Se accesează **înainte** de orice alt mod de configurare specific
+Global config mode e accesat înaintea altor moduri de configurare specifice. Din el, utilizatorul poate intra în diverse **subconfiguration modes**, fiecare permițând configurarea unei părți/funcții specifice a device-ului IOS. Două subconfig modes comune:
 
-**Din global config mode → poți intra în subconfiguration modes**, fiecare pentru o parte/funcție specifică a device-ului.
+- **Line Configuration Mode** – folosit pentru a configura acces console, SSH, Telnet sau AUX.
+- **Interface Configuration Mode** – folosit pentru a configura un port de switch sau o interfață de rețea a router-ului.
 
----
+Când e folosit CLI, modul e identificat prin prompt-ul unic acelui mod. Implicit, orice prompt începe cu numele device-ului, iar restul indică modul:
 
-#### Cele 2 subconfiguration modes comune:
+- Line config mode → `Switch(config-line)#`
+- Interface config mode → `Switch(config-if)#`
 
-|Mode|Rol|Prompt|
-|---|---|---|
-|**Line Configuration Mode**|Configurează accesul: **console, SSH, Telnet, sau AUX**|`Switch(config-line)#`|
-|**Interface Configuration Mode**|Configurează un **port de switch** sau **interfață de rețea a routerului**|`Switch(config-if)#`|
 
----
+
+
 ### 2.2.3 Video - IOS CLI Primary Command Mode
 
 #### Vezi video
 
----
+
+
 ### 2.2.4 Navigate Between IOS Modes
 
-**Comenzile esențiale de navigare** (astea sunt CRITICE, apar sigur la quiz și le vei folosi constant în practică):
+Diverse comenzi mută în/din prompt-urile de comandă:
 
-#### Între User EXEC ↔ Privileged EXEC
-- **`enable`** — trece din User EXEC în Privileged EXEC (`Switch>` → `Switch#`)
-- **`disable`** — trece înapoi din Privileged EXEC în User EXEC
-- **Notă importantă:** Privileged EXEC mode e uneori numit și **"enable mode"**
+- **User EXEC → Privileged EXEC**: comanda **enable**
+- **Privileged EXEC → User EXEC**: comanda **disable**
+- Notă: Privileged EXEC mode e uneori numit _enable mode_.
+- **Privileged EXEC → Global config**: comanda **configure terminal**
+- **Global config → Privileged EXEC**: comanda **exit**
 
-#### Între Privileged EXEC ↔ Global Configuration
-- **`configure terminal`** — intră în global config mode (`Switch#` → `Switch(config)#`)
-- **`exit`** — te întoarce la Privileged EXEC
-
-#### Între Global Config ↔ Subconfiguration modes
-- **`line [tip] [număr]`** — ex: `line console 0` → intră în line configuration mode
-- **`interface [tip] [număr]`** — ex: `interface FastEthernet 0/1` → intră în interface configuration mode
-- **`exit`** — din orice subconfiguration mode, te întoarce **un nivel mai sus** în ierarhie
-
----
-
-**Comenzi speciale de "ieșire rapidă":**
-
-| Comandă      | Efect                                                                                                        |
-| ------------ | ------------------------------------------------------------------------------------------------------------ |
-| **`end`**    | Din **orice** subconfiguration mode → direct în **Privileged EXEC** (sare peste toate nivelele intermediare) |
-| **`Ctrl+Z`** | **Aceeași funcție** ca `end` — shortcut de tastatură                                                         |
-| **`exit`**   | Te mută **un singur nivel mai sus** în ierarhie (nu sare direct la Privileged EXEC)                          |
-
----
-
-**Exemple din text (foarte utile de memorat vizual):**
+Pentru subconfiguration modes: se folosește comanda **line** urmată de tipul liniei de management și numărul dorit (ex: `line console 0`). Comanda **exit** iese dintr-un subconfig mode și te întoarce în global config mode.
 
 ```
 Switch(config)# line console 0
@@ -139,32 +132,38 @@ Switch(config-line)# exit
 Switch(config)#
 ```
 
-→ `exit` din line config te duce înapoi la global config (un nivel mai sus)
+Din **orice** subconfiguration mode al global config mode, comanda **exit** te duce un nivel mai sus în ierarhie.
+
+Din **orice** subconfig mode direct în **Privileged EXEC mode**: comanda **end** sau combinația **Ctrl+Z**.
 
 ```
 Switch(config-line)# end
 Switch#
 ```
 
-→ `end` sare direct la Privileged EXEC, indiferent din ce subconfiguration mode ești
+Poți trece direct dintr-un subconfig mode în altul — ex, după selectarea unei interfețe, prompt-ul se schimbă din `(config-line)#` în `(config-if)#`:
 
 ```
 Switch(config-line)# interface FastEthernet 0/1
 Switch(config-if)#
 ```
 
-→ Poți sări **direct** dintr-un subconfiguration mode în altul (aici: line → interface), fără să treci prin global config
 
----
+
+
 ### 2.2.5 Video - Navigate Between IOS Modes
 
 ## Vezi video
 
----
+
+
+
 ### 2.2.6 A Note About Syntax Checker Activities
 
-- **Syntax Checker** = strict, cere comanda completă exact cum e scrisă. 
-- **Packet Tracer** = flexibil, acceptă abrevieri, mai apropiat de un router/switch real.
+Când înveți să modifici configurații de device, e bine să începi într-un mediu safe, non-production, înainte de a încerca pe echipament real. NetAcad oferă tool-uri de simulare pentru a construi skill-uri de configurare și troubleshooting. Fiind tool-uri de simulare, de obicei nu au toată funcționalitatea echipamentului real.
+
+- **Syntax Checker** – primești un set de instrucțiuni pentru a introduce un set specific de comenzi. Nu poți avansa decât dacă introduci comanda exactă și completă conform specificației.
+- **Packet Tracer** – tool de simulare mai avansat, permite introducerea de comenzi abreviate, la fel ca pe echipament real.
 
 ---
 
