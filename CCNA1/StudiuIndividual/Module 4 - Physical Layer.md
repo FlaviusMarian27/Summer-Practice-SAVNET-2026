@@ -45,7 +45,7 @@ Cele **3 arii funcționale** ale standardelor physical layer — memorează-le e
 - **Manchester encoding**: tranziție de la low→high = bit 1, high→low = bit 0 (tranziția e la mijlocul perioadei de bit) — folosit în **10 Mbps Ethernet** (10BASE-T)
 - Pentru rate mai mari: 100BASE-TX → **4B/5B**, 1000BASE-T → **8B/10B**
 
-![Encoding](../Image/encoder.png)
+![Encoding](../Image/Encoder.png)
 
 #### 4.2.4 Signaling
 
