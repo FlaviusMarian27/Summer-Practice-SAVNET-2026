@@ -125,9 +125,7 @@ Un **node** = orice dispozitiv care poate primi, crea, stoca sau transmite date 
 - Oferă disponibilitate ridicată, dar e scump și complex din cauza numărului mare de conexiuni
 - Poate fi **full mesh** (toate site-urile interconectate direct) sau **partial mesh** (doar unele conectate direct)
 
-![mesh](../Image/mesh.png)
-
-
+![Mesh](../Image/Mesh.png)
 ### 6.2.3 Point-to-Point WAN Topology
 
 #### **Topologia fizică point-to-point:**

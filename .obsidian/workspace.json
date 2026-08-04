@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA1/StudiuIndividual/Module 3 - Protocols and Models.md",
+                "file": "CCNA1/StudiuIndividual/Module 6 - Data Link Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 3 - Protocols and Models"
+              "title": "Module 6 - Data Link Layer"
             }
           }
         ]
@@ -187,6 +187,7 @@
   },
   "active": "c55c6645c2e49a3a",
   "lastOpenFiles": [
+    "CCNA1/StudiuIndividual/Module 3 - Protocols and Models.md",
     "CCNA1/StudiuIndividual/Module 2 - Basic Switch and End Device Configuration.md",
     "CCNA1/StudiuIndividual/Module 1 - Introduction.md",
     "CCNA1/StudiuIndividual/Module 15 - Application Layer.md",
@@ -203,7 +204,6 @@
     "CCNA1/Image/CBF.png",
     "CCNA1/Image/Port1.png",
     "CCNA1/StudiuIndividual/Module 12 - IPv6 Addressing.md",
-    "CCNA1/StudiuIndividual/Module 3 - Protocols and Models.md",
     "CCNA1/StudiuIndividual/Module 11 - IPv4 Addressing.md",
     "CCNA1/Cursuri/Curs 10 - 24.07.2026.md",
     "CCNA1/StudiuIndividual/Module 8 - Network Layer.md",
