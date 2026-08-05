@@ -93,7 +93,7 @@
 - ***header simplificat*** - ma puține câmpuri.
 - ***eliminarea nevoie de NAT*** - fiindcă sunt atât de multe adrese publice disponibile, nu mai e nevoie să le "împarți" prin NAT.
 
-![Tabel IPv4 si IPv6](../Image/tabelIPv4Ipv6.png)
+![Tabel IPv4 si IPv6](../Image/tabelIPv4IPv6.png)
 
 
 ### 8.3.3 IPv4 Packet Header Fields in the IPv6 Packet Header
