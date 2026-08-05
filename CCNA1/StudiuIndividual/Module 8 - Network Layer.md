@@ -207,7 +207,7 @@ netstat -r
     - Este folosită de router ca o plasă de siguranță: dacă primește un pachet pentru o destinație necunoscută (nu găsește o potrivire mai bună/mai lungă în tabelă), va trimite pachetul pe această rută implicită, sperând că următorul echipament va ști ce să facă cu el.
       
       
-![IPRRT](IPRRT.png)
+![IPRRT](../Image/IPRRT.png)
 
 ### 8.5.3 Static Routing
 
