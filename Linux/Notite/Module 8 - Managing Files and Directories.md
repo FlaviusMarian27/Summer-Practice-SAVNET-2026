@@ -82,11 +82,11 @@ Creează un fișier gol (folosit des în exemple/laburi pentru a genera rapid fi
 
 **Rezumat rapid al comenzilor din acest lab:**
 
-|Comandă|Scop|
-|---|---|
-|`mkdir nume`|creează director|
-|`touch nume`|creează fișier gol|
-|`cp [-v] [-p] [-R] sursa dest`|copiază|
-|`mv sursa dest`|mută/redenumește|
-|`rm [-r] nume`|șterge fișier/director|
-|`rmdir nume`|șterge director gol|
+| Comandă                        | Scop                   |
+| ------------------------------ | ---------------------- |
+| `mkdir nume`                   | creează director       |
+| `touch nume`                   | creează fișier gol     |
+| `cp [-v] [-p] [-R] sursa dest` | copiază                |
+| `mv sursa dest`                | mută/redenumește       |
+| `rm [-r] nume`                 | șterge fișier/director |
+| `rmdir nume`                   | șterge director gol    |
