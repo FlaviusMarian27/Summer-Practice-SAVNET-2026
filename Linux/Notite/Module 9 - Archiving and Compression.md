@@ -135,16 +135,16 @@ zip -r School.zip School
 
 **Tabel recapitulativ rapid — comenzile din capitol:**
 
-|Comandă|Ce face|
-|---|---|
-|`gzip fisier`|comprimă (lossless), șterge originalul|
-|`gunzip` / `gzip -d`|decomprimă|
-|`gzip -l`|statistici compresie|
-|`tar -c -f arhiva.tar fisiere`|creează arhivă|
-|`tar -x -f arhiva.tar`|extrage arhivă|
-|`tar -t -f arhiva.tar`|listează conținut|
-|`tar ... -z`|+ compresie gzip|
-|`tar ... -j`|+ compresie bzip2|
-|`zip -r arhiva.zip director`|arhivează + comprimă (recursiv)|
-|`unzip -l arhiva.zip`|listează|
-|`unzip arhiva.zip`|extrage|
+| Comandă                        | Ce face                                |
+| ------------------------------ | -------------------------------------- |
+| `gzip fisier`                  | comprimă (lossless), șterge originalul |
+| `gunzip` / `gzip -d`           | decomprimă                             |
+| `gzip -l`                      | statistici compresie                   |
+| `tar -c -f arhiva.tar fisiere` | creează arhivă                         |
+| `tar -x -f arhiva.tar`         | extrage arhivă                         |
+| `tar -t -f arhiva.tar`         | listează conținut                      |
+| `tar ... -z`                   | + compresie gzip                       |
+| `tar ... -j`                   | + compresie bzip2                      |
+| `zip -r arhiva.zip director`   | arhivează + comprimă (recursiv)        |
+| `unzip -l arhiva.zip`          | listează                               |
+| `unzip arhiva.zip`             | extrage                                |

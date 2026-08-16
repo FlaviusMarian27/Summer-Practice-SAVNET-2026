@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Notite/Module 9 - Archiving and Compression.md",
+                "file": "Linux/Notite/Module 11 - Basic Scripting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 9 - Archiving and Compression"
+              "title": "Module 11 - Basic Scripting"
             }
           }
         ]
@@ -187,8 +187,10 @@
   },
   "active": "0d5b29a41a45d739",
   "lastOpenFiles": [
-    "Linux/Notite/Module 8 - Managing Files and Directories.md",
+    "Linux/Notite/Module 10 - Working with Text.md",
+    "Linux/Notite/Module 11 - Basic Scripting.md",
     "Linux/Notite/Module 9 - Archiving and Compression.md",
+    "Linux/Notite/Module 8 - Managing Files and Directories.md",
     "Linux/Notite/Module 7 - Navigating the Filesystem.md",
     "Linux/Notite/Module 6 - Getting Help.md",
     "Linux/Notite/Module 5 - Command Line Skills.md",
@@ -222,8 +224,6 @@
     "CCNA1/StudiuIndividual/Module 9 - Address Resolution.md",
     "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
     "CCNA1/Cursuri/Curs 8 - 23.07.2026.md",
-    "CCNA1/Cursuri/Curs 7 - 22.07.2026.md",
-    "CCNA1/Cursuri/Curs 6 - 21.07.2026.md",
     "CCNA1/Teme/Curs 6 - 21.07.2026/Rezolvat.pkt",
     "CCNA1/Teme/Curs 6 - 21.07.2026",
     "CCNA1/Teme/Curs 5 - 20.07.2026/Rezolvat.pkt",
