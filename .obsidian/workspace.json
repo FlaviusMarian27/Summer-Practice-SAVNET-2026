@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Notite/Module 11 - Basic Scripting.md",
+                "file": "Linux/Notite/Module 18 - Special Directories and Files.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 11 - Basic Scripting"
+              "title": "Module 18 - Special Directories and Files"
             }
           }
         ]
@@ -187,8 +187,15 @@
   },
   "active": "0d5b29a41a45d739",
   "lastOpenFiles": [
-    "Linux/Notite/Module 10 - Working with Text.md",
+    "Linux/Notite/Module 17 - Ownership and Permissions.md",
+    "Linux/Notite/Module 18 - Special Directories and Files.md",
+    "Linux/Notite/Module 16 - Creating Users and Groups.md",
+    "Linux/Notite/Module 15 - System and User Security.md",
+    "Linux/Notite/Module 14 - Network Configuration.md",
+    "Linux/Notite/Module 13 - Where Data is Stored.md",
+    "Linux/Notite/Module 12 - Understanding Computer Hardware.md",
     "Linux/Notite/Module 11 - Basic Scripting.md",
+    "Linux/Notite/Module 10 - Working with Text.md",
     "Linux/Notite/Module 9 - Archiving and Compression.md",
     "Linux/Notite/Module 8 - Managing Files and Directories.md",
     "Linux/Notite/Module 7 - Navigating the Filesystem.md",
@@ -217,13 +224,6 @@
     "CCNA1/Image/CBF.png",
     "CCNA1/Image/Port1.png",
     "CCNA1/StudiuIndividual/Module 12 - IPv6 Addressing.md",
-    "CCNA1/StudiuIndividual/Module 11 - IPv4 Addressing.md",
-    "CCNA1/Cursuri/Curs 10 - 24.07.2026.md",
-    "CCNA1/StudiuIndividual/Module 8 - Network Layer.md",
-    "CCNA1/StudiuIndividual/Module 10 - Basic Router Configuration.md",
-    "CCNA1/StudiuIndividual/Module 9 - Address Resolution.md",
-    "CCNA1/StudiuIndividual/Module 7 - Ethernet Switching.md",
-    "CCNA1/Cursuri/Curs 8 - 23.07.2026.md",
     "CCNA1/Teme/Curs 6 - 21.07.2026/Rezolvat.pkt",
     "CCNA1/Teme/Curs 6 - 21.07.2026",
     "CCNA1/Teme/Curs 5 - 20.07.2026/Rezolvat.pkt",
